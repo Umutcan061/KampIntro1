@@ -6,20 +6,37 @@ using System.Threading.Tasks;
 
 namespace ClassMetotDemo
 {
-     class Program
+    class Program
     {
         static void Main(string[] args)
         {
             Musteri musteri1 = new Musteri();
-            musteri1.Id= 1;
+            musteri1.Id = 1;
             musteri1.FirstName = "Umutcan";
             musteri1.LastName = "Çalık";
-            musteri1.Age = 30;  
+            musteri1.Age = 30;
 
-            MusteriManager musteriManager= new MusteriManager();
+            MusteriManager musteriManager = new MusteriManager();
             musteriManager.Add(musteri1);
             musteriManager.GetAll(musteri1);
             musteriManager.Remove(musteri1);
+
+            string[] ogrenciler = { "Ahmet", "Mehmet", "Ayşe" };
+
+            foreach (string o in ogrenciler)
+            {
+
+                Console.WriteLine(o);
+
+            }
+
+
+            Console.ReadLine();
+
+
+
+
+
 
 
         }
